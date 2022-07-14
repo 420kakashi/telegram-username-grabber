@@ -29,7 +29,7 @@ def check_username():
 
 new_username = input('enter target username: ')
 
-client = TelegramClient('session_file', api_id, api_hash).start()
+client = TelegramClient('session_file', 'api_id' , 'api_hash' ).start()
 
 t = threading.Thread(target=check_username)
 t.setDaemon(True)
