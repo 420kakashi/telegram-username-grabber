@@ -3,8 +3,8 @@ from telethon.tl.functions.account import UpdateUsernameRequest
 import threading, requests, time, random
 
 # you should use your own api_hash and api_id
-api_hash = 'api_hash' 
-api_id = 123
+api_hash = 'b75fdc05db8af83c4e6226a02e0e6eaf' 
+api_id = 2153666
 
 
 state = False
