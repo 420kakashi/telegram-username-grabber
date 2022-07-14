@@ -9,7 +9,7 @@ api_id = 2153666
 
 state = False
 time1 = time.time()
-new_username = ''
+new_username = 'MarinKitagawa'
 
 def check_username():
     global new_username, state, time1
