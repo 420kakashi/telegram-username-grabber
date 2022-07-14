@@ -3,13 +3,13 @@ from telethon.tl.functions.account import UpdateUsernameRequest
 import threading, requests, time, random
 
 # you should use your own api_hash and api_id
-api_hash = 'b75fdc05db8af83c4e6226a02e0e6eaf' 
-api_id = '2153666'
+api_hash = 'cbd47f2fcce7aafb09bb664515576a21' 
+api_id = 13183266
 
 
 state = False
 time1 = time.time()
-new_username = 'MarinKitagawa'
+new_username = ''
 
 def check_username():
     global new_username, state, time1
@@ -29,7 +29,7 @@ def check_username():
 
 new_username = input('enter target username: ')
 
-client = TelegramClient('session_file', 'api_id' , 'api_hash' ).start()
+client = TelegramClient( 'session_file' , api_id , api_hash ).start()
 
 t = threading.Thread(target=check_username)
 t.setDaemon(True)
